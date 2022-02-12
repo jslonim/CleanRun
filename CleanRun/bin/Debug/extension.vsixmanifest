@@ -2,7 +2,7 @@
   <Metadata>
     <Identity Id="CleanRun.efa888c2-8340-416c-b3d1-babf591e17cf" Version="1.0" Language="en-US" Publisher="Julian Slonim" />
     <DisplayName>CleanRun</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Description xml:space="preserve">CleanRun allows you to clean, build and run a project with 1 button</Description>
     <Icon>Resources\Icon.png</Icon>
     <PreviewImage>Resources\Icon.png</PreviewImage>
   </Metadata>

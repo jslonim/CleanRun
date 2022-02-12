@@ -8,7 +8,7 @@
 
   <Commands package="CleanRun">
     <Groups>
-      <Group guid="CleanRun" id="MyMenuGroup" priority="0x0600">
+      <Group guid="CleanRun" id="MyMenuGroup" priority="0x0900">
         <Parent guid="VSMainMenu" id="StandardToolbar"/>
       </Group>
     </Groups>
