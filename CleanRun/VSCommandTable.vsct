@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="CleanRun">
+    <Groups>
+      <Group guid="CleanRun" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="VSMainMenu" id="StandardToolbar"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="CleanRun" id="MyCommand" priority="0x0100" type="Button">
+        <Parent guid="CleanRun" id="MyMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="RunPaused" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>CleanRun</ButtonText>
+          <LocCanonicalName>.CleanRun.MyCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <KeyBindings>
+    <KeyBinding guid="CleanRun" id="MyCommand" editor="guidVSStd97" mod1="Alt" key1="VK_F5" />
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="CleanRun" value="{f5ee4bc1-f161-4064-b772-1051570233da}">
+      <IDSymbol name="MyMenuGroup" value="0x0001" />
+      <IDSymbol name="MyCommand" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
